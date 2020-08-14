@@ -18,6 +18,8 @@ config :kaffy_demo, KaffyDemoWeb.Endpoint,
   pubsub_server: KaffyDemo.PubSub,
   live_view: [signing_salt: "pqEYFodN"]
 
+config :kaffy, otp_app: :kaffy_demo, ecto_repo: KaffyDemo.Repo, router: KaffyDemoWeb.Router
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",

@@ -1,5 +1,6 @@
 defmodule KaffyDemoWeb.Router do
   use KaffyDemoWeb, :router
+  use Kaffy.Routes, scope: "/kaffy"
 
   pipeline :browser do
     plug :accepts, ["html"]
