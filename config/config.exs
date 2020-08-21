@@ -18,7 +18,11 @@ config :kaffy_demo, KaffyDemoWeb.Endpoint,
   pubsub_server: KaffyDemo.PubSub,
   live_view: [signing_salt: "pqEYFodN"]
 
-config :kaffy, otp_app: :kaffy_demo, ecto_repo: KaffyDemo.Repo, router: KaffyDemoWeb.Router
+config :kaffy,
+  otp_app: :kaffy_demo,
+  ecto_repo: KaffyDemo.Repo,
+  router: KaffyDemoWeb.Router,
+  resources: [blog: [resources: [post: [schema: KaffyDemo.Blog.Post, admin: KaffyDemoWeb.Kaffy.PostAdmin]]]]
 
 # Configures Elixir's Logger
 config :logger, :console,

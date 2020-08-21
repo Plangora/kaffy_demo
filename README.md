@@ -1,5 +1,5 @@
 # KaffyDemo
-## Kaffy Installation
+## Customize Kaffy Index Page
 
 To start your Phoenix server:
 
@@ -11,7 +11,7 @@ To start your Phoenix server:
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 ## Reference Video
-[https://youtu.be/5E4QC842IFc](https://youtu.be/5E4QC842IFc)
+[https://youtu.be/BjOVJbrdXME](https://youtu.be/BjOVJbrdXME)
 
 
 ## Learn more
