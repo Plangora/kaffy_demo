@@ -8,5 +8,13 @@ defmodule KaffyDemoWeb.Kaffy.PostAdmin do
     ]
   end
 
+  def form_fields(_) do
+    [
+      title: nil,
+      body: nil,
+      published: %{choices: [{"Published", true}, {"Unpublish", false}], create: :hidden}
+    ]
+  end
+
   defp format_datetime!(datetime), do: Timex.format!(datetime, "{YYYY}-{M}-{D} {h24}:{m}")
 end

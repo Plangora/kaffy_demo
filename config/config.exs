@@ -22,7 +22,9 @@ config :kaffy,
   otp_app: :kaffy_demo,
   ecto_repo: KaffyDemo.Repo,
   router: KaffyDemoWeb.Router,
-  resources: [blog: [resources: [post: [schema: KaffyDemo.Blog.Post, admin: KaffyDemoWeb.Kaffy.PostAdmin]]]]
+  resources: [
+    blog: [resources: [post: [schema: KaffyDemo.Blog.Post, admin: KaffyDemoWeb.Kaffy.PostAdmin]]]
+  ]
 
 # Configures Elixir's Logger
 config :logger, :console,
