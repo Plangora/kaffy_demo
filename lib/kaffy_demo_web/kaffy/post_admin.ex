@@ -3,7 +3,7 @@ defmodule KaffyDemoWeb.Kaffy.PostAdmin do
     [
       title: nil,
       body: nil,
-      published: nil,
+      published: %{filters: [{"Published", true}, {"Unpublished", false}]},
       inserted_at: %{name: "Created At", value: fn p -> format_datetime!(p.inserted_at) end}
     ]
   end
