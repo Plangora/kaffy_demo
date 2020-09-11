@@ -16,5 +16,7 @@ defmodule KaffyDemoWeb.Kaffy.PostAdmin do
     ]
   end
 
+  def search_fields(_), do: [:title]
+
   defp format_datetime!(datetime), do: Timex.format!(datetime, "{YYYY}-{M}-{D} {h24}:{m}")
 end
