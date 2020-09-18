@@ -101,4 +101,12 @@ defmodule KaffyDemo.Blog do
   def change_post(%Post{} = post, attrs \\ %{}) do
     Post.changeset(post, attrs)
   end
+
+  @doc """
+  Gets total number of words for all posts
+  """
+  def total_words_in_blog do
+    from(p in Post, select: sum(fragment("char_length(?)", p.body)))
+    |> Repo.one()
+  end
 end

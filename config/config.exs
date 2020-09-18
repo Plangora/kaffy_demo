@@ -22,6 +22,7 @@ config :kaffy,
   otp_app: :kaffy_demo,
   ecto_repo: KaffyDemo.Repo,
   router: KaffyDemoWeb.Router,
+  scheduled_tasks: [KaffyDemoWeb.Kaffy.PostTasks],
   resources: [
     blog: [resources: [post: [schema: KaffyDemo.Blog.Post, admin: KaffyDemoWeb.Kaffy.PostAdmin]]]
   ]
